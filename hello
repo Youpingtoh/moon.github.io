@@ -27,10 +27,10 @@
     <script>
         // Array of image paths
         var imagePaths = [
-            "1.00.png",
-            "1，01.png",
-            "1.02.png",
-            "1.04.png"
+            "trial/1.00.png",
+            "trial/1，01.png",
+            "trial/1.02.png",
+            "trial/1.04.png"
         ];
 
         // Function to load images
