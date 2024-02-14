@@ -8,14 +8,18 @@
         body {
             background-color: black; /* Set background color to black for a starry night effect */
             text-align: center;
+            color: white; /* Set text color to white for better visibility */
+        }
+        #image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         img {
             max-width: 100%;
             height: auto;
-            display: block;
-            margin: 0 auto;
+            margin: 10px; /* Add margin for better spacing between images */
             border: 1px solid white; /* Add a white border around images for visibility */
-            padding: 10px; /* Add padding for better spacing */
         }
     </style>
 </head>
@@ -27,11 +31,11 @@
     <script>
         // Array of image paths
         var imagePaths = [
-            "/trial/1.00.png",
-            "/trial/1.01.png",
-            "/trial/1.02.png",
-         "/trial/1.03.png",
-            "/trial/1.04.png"
+            "trial/1.00.png",
+            "trial/1.01.png",
+            "trial/1.02.png",
+            "trial/1.03.png",
+            "trial/1.04.png"
         ];
 
         // Function to load images
