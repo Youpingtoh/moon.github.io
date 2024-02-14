@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Wonderful Land of Moon and Stars</title>
+    <style>
+        body {
+            background-color: black; /* Set background color to black for a starry night effect */
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid white; /* Add a white border around images for visibility */
+            padding: 10px; /* Add padding for better spacing */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Wonderful Land of Moon and Stars</h1>
+    <div id="image-container">
+        <!-- Images will be displayed here -->
+    </div>
+    <script>
+        // Array of image paths
+        var imagePaths = [
+            "C:\\Users\\60113\\Downloads\\1.00.png",
+            "C:\\Users\\60113\\Downloads\\1.01.png",
+            "C:\\Users\\60113\\Downloads\\1.02.png",
+            "C:\\Users\\60113\\Downloads\\1.04.png"
+        ];
+
+        // Function to load images
+        function loadImages() {
+            var container = document.getElementById('image-container');
+
+            // Loop through the imagePaths array and create img elements for each path
+            imagePaths.forEach(function(path) {
+                var img = document.createElement('img');
+                img.src = path;
+                container.appendChild(img);
+            });
+        }
+
+        // Call the loadImages function when the page loads
+        window.onload = loadImages;
+    </script>
+</body>
+</html>
